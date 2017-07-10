@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Inheritence
+{
+    class Person
+    {
+        protected string ssn = "444-55-6666";
+        protected string name = "John L. Malgraine";
+
+        public virtual void GetInfo()
+        {
+            Console.WriteLine("Name: {0}", name);
+            Console.WriteLine("SSN: {0}", ssn);
+        }
+
+        public virtual void PrintName()
+        {
+            Console.WriteLine(name);
+        }
+
+        public void DrinkWater()
+        {
+            Console.WriteLine(name + " drank water");
+        }
+    }
+}
